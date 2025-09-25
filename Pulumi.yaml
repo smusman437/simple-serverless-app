@@ -1,0 +1,12 @@
+name: simple-serverless-app
+runtime:
+  name: nodejs
+  options:
+    typescript: true
+main: dist/
+description: Simple serverless application with Lambda, API Gateway, DynamoDB, and S3
+template:
+  config:
+    aws:region:
+      description: The AWS region to deploy into
+      default: us-east-1
